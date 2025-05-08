@@ -81,6 +81,10 @@ public class HangmanGameService {
     return hangmanGame;
   }
 
+  public List<HangmanGame> getAllGames() {
+    return storedGamesCollection;
+  }
+
   private boolean checkIsLetterWrong(String wordToGuess, char letter){
     return wordToGuess.indexOf(letter) == -1;
   }
